@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart | RedStore</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index1.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav class="MenuItems">
+                    <ul>
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <a href="cart.html"><img src="images/cart.png" class="cartImg"></a>
+                    <div class="totalItems">0</div>
+                </div>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------cart item details---------------------- -->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: $60.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: $40.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$230.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- ---------------footer---------------------- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Sports Accessible to the
+                        Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Blog Post</a></li>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+        </div>
+    </div>
+
+
+    <!-- ---------------js for toggle menu---------------------- -->
+
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
